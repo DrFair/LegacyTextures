@@ -10,8 +10,8 @@ public class HumanDrawOptionsPatch {
     @Advice.OnMethodEnter()
     static void onEnter(@Advice.This HumanDrawOptions drawOptions) {
         drawOptions.eyelidsTexture(null);
-        drawOptions.facialFeatureTexture(null);
-        drawOptions.backFacialFeatureTexture(null);
+//        drawOptions.facialFeatureTexture(null);
+//        drawOptions.backFacialFeatureTexture(null);
         drawOptions.blinking(false);
     }
 }
