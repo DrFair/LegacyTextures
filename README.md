@@ -1,3 +1,3 @@
-An example mod for Necesse.
+A legacy texturepack for Necesse.
 
-Check out the [modding wiki page](https://necessewiki.com/Modding) for more.
+Check out the [Workshop page](TODO: LINK) for more.
