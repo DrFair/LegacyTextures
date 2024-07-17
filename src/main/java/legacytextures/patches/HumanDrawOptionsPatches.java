@@ -33,7 +33,7 @@ public class HumanDrawOptionsPatches {
     @ModMethodPatch(target = HumanDrawOptions.class, name = "isSpriteXOffset", arguments = {int.class})
     public static class IsSpriteXOffsetPatch {
         @Advice.OnMethodExit()
-        static void onExit(@Advice.This HumanDrawOptions thiz, @Advice.Argument(0) int spriteX, @Advice.Return(readOnly = false) boolean out) {
+        static void onExit(@Advice.Argument(0) int spriteX, @Advice.Return(readOnly = false) boolean out) {
             out = spriteX == 2 || spriteX == 4;
         }
     }
